@@ -1,0 +1,20 @@
+@mixin header_elements {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:25px;
+    padding-bottom: 25px;
+}
+@mixin main_elements{
+    padding-top: 64px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin logo_elements{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
