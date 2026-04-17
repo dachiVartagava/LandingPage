@@ -19,7 +19,6 @@
 
 .header_items {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-top: 25px;
@@ -56,7 +55,6 @@ main {
 
 ul {
   display: flex;
-  flex-wrap: wrap;
   gap: 32px;
   list-style-type: none;
 }
@@ -93,7 +91,7 @@ ul li a {
   max-width: 532px;
   width: 100%;
   max-height: 416px;
-  max-height: 100%;
+  height: 100%;
 }
 
 .main_text {
@@ -119,7 +117,6 @@ ul li a {
 
 .button_class {
   display: flex;
-  flex-wrap: wrap;
   gap: 16px;
 }
 .button_class button:first-child {
@@ -150,10 +147,7 @@ ul li a {
 .supporters {
   padding-top: 64px;
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
   padding-left: 20px;
   gap: 99px;
 }
@@ -185,10 +179,6 @@ ul li a {
 .market {
   padding-top: 192px;
   display: grid;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
   padding-left: 20px;
 }
 
@@ -217,7 +207,6 @@ ul li a {
   display: flex;
   margin-top: 132px;
   gap: 40px;
-  flex-wrap: wrap;
 }
 
 .starter {
@@ -305,4 +294,75 @@ footer p {
 }
 footer .icons {
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .header_items {
+    flex-wrap: wrap;
+    padding: 8px;
+    transition: 0.3s;
+  }
+  ul {
+    flex-wrap: wrap;
+    padding: 8px;
+    max-width: 500px;
+    transition: 0.7s;
+  }
+  .logo_items {
+    flex-wrap: wrap;
+    transition: 0.7s;
+  }
+  .paragph {
+    display: none;
+    transition: 0.7s;
+  }
+  .rightside_elements {
+    flex-wrap: wrap;
+    transition: 0.7s;
+  }
+  .rightside_elements .transparent_btn {
+    display: none;
+    transition: 0.3s;
+  }
+  .digitalproducts_wrapper {
+    display: block;
+    transition: 0.3s;
+  }
+  .digitalproducts_wrapper .main_text {
+    font-weight: 100;
+    font-size: 24px;
+    transition: 0.7s;
+  }
+  .digitalproducts_wrapper .button_class {
+    display: block;
+    margin-bottom: 40px;
+    transition: 0.7s;
+  }
+  .imageclass {
+    display: none;
+    transition-duration: 1s;
+  }
+  .supporters {
+    display: block;
+    margin-top: 40px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .market_introductions {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s;
+  }
+  .product_prices {
+    display: block;
+    flex-wrap: wrap;
+  }
+  .product_prices .starter {
+    width: 50%;
+    height: auto;
+  }
+  .product_prices .starter button {
+    width: 25%;
+    height: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
